@@ -25,3 +25,4 @@ echo "export PATH=/usr/local/mysql/bin:$PATH" > ~/.bash_profile
 sudo mkdir /var/mysql
 sudo ln -s /tmp/mysql.sock /var/mysql/mysql.sock
 . ~/.bash_profile 
+sudo /usr/local/mysql/support-files/mysql.server start
