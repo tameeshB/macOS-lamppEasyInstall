@@ -4,6 +4,9 @@ I recently found myself reinstalling the lampp package on my mac as my mac was f
 This is the .command file and the .sh shell script that you may use for installing the following on your mac:
 * Apache2
 * php
-* mysql  
+* upgrade to php7.0  
+* mysql  
+* brew  
+
 ## chmod +x lamppInstall.*
 
