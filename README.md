@@ -5,5 +5,5 @@ This is the .command file and the .sh shell script that you may use for installi
 * Apache2
 * php
 * mysql  
-## chmod +x lamppInstall.command
+## chmod +x lamppInstall.*
 
