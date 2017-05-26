@@ -56,4 +56,9 @@ echo "export PATH=/usr/local/mysql/bin:$PATH" > ~/.bash_profile
 sudo mkdir /var/mysql
 sudo ln -s /tmp/mysql.sock /var/mysql/mysql.sock
 . ~/.bash_profile 
-sudo /usr/local/mysql/support-files/mysql.server start
+
+if [[ $brew = 1 ]]; then
+	mysql.server start
+else
+	sudo /usr/local/mysql/support-files/mysql.server start
+fi
