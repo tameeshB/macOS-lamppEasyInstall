@@ -5,6 +5,7 @@ sudo apachectl start;
 sudo cp /etc/apache2/httpd.conf /etc/apache2/httpd.conf.bak;
 sudo sed -i -- 's/#LoadModule rewrite_module/LoadModule rewrite_module/g' /etc/apache2/httpd.conf;
 sudo sed -i -- 's/#LoadModule php5_module/LoadModule php5_module/g' /etc/apache2/httpd.conf;
+sudo sed -i -- 's/FollowSymLinks Multiviews/Indexes FollowSymLinks Multiviews/g' /etc/apache2/httpd.conf;
 sudo apachectl restart;
 grep DocumentRoot httpd.conf;
 declare -i brew=0
