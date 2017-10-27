@@ -8,7 +8,7 @@ sudo sed -i -- 's/#LoadModule php5_module/LoadModule php5_module/g' /etc/apache2
 sudo apachectl restart;
 grep DocumentRoot httpd.conf;
 declare -i brew=0
-echo "Is brew installed? y/n?";
+echo "Is brew installed? y/n? It is highly recommended that you install brew on your mac for package management";
 read text1
 if [[ $text1 = "y" ]]; then
         brew=1
